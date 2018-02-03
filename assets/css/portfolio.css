@@ -1,0 +1,65 @@
+
+a:link    {
+    /* Applies to all unvisited links */
+    text-decoration:  none;
+    font-weight: inherit;
+    background-color: inherit;
+    color:inherit;
+    } 
+  a:visited {
+    /* Applies to all visited links */
+    text-decoration:  none;
+    font-weight: inherit;
+    background-color: inherit;
+    color:inherit;
+    } 
+  a:hover   {
+    /* Applies to links under the pointer */
+    text-decoration:  none;
+    font-weight: inherit;
+    background-color: inherit;
+    color:inherit;
+    } 
+  a:active  {
+    /* Applies to activated links */
+    text-decoration:  none;
+    font-weight: inherit;
+    background-color: inherit;
+    color:inherit;
+    } 
+  
+
+.portsection {
+    width: 295px;
+    height: 200px;
+    float: left;
+    background: #ffffff;
+    border-style: solid;
+    border-width: thin;
+    border-color: #dddddd;
+    margin-top: 40px;
+}
+
+#right {
+    margin-right: 3px;
+}
+
+#portimage {
+    width: 295px;
+    height: 200px;
+}
+
+#portcontent {
+    width: 295px;
+    height: 50px;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-bottom-width: 50px;
+    bottom: 70px;
+    position: relative;
+    color:#ffffff;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
