@@ -4,11 +4,20 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { Typography, Grid, Paper } from '@material-ui/core/';
 import { withStyles } from '@material-ui/core/styles';
 import CarouselContent from "./../Carousel"
+import ProfileFrame from "./../ProfileFrame"
 import "./Body.css";
 
 const styles = theme => ({
+    welcome: {
+        position: 'absolute',
+        top: 420,
+        color: 'white',
+    },
     sectionTitle: {
+        position: 'absolute',
+        top: 0,
         paddingTop: 80,
+        color: 'white',
     },
     container: {
         display: 'grid',
@@ -26,7 +35,7 @@ const styles = theme => ({
 
 const HeroBanner = ({ image, min, max, children }) => (
     <div className="hero-container">
-        <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
+        <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate={'true'}>
             <div
                 className="hero-image"
                 style={{ backgroundImage: `url(${image})` }}
@@ -45,16 +54,30 @@ const Body = (props) => (
             max={'20%'}
             image="http://informationcommunicationtechnology.com/wp-content/uploads/2018/06/Desk-hd-backgrounds.jpg"
         >
-            <Typography align={"center"} headlineMapping={"title"} variant={"display2"}>
+            <ProfileFrame 
+                style={{float: "left"}}
+                alt="Savath Khem"
+                src="./images/profile.jpeg"
+            />
+            <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={props.classes.welcome}>
                 Welcome
             </Typography>
         </HeroBanner>
     </main>
 
+    <main>
+        <nav />
+        <HeroBanner
+            min={'-20%'}
+            max={'20%'}
+            image="https://www.mockupworld.co/wp-content/uploads/edd/2017/10/free-office-desk-scene-mockup-1000x683.jpg"
+        >
     <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={props.classes.sectionTitle}>
         About Me
     </Typography>
     <CarouselContent />
+        </HeroBanner>
+    </main>
 
   </ParallaxProvider>
   

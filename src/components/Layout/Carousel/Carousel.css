@@ -37,11 +37,11 @@
       cursor: inherit;
       display: none; }
     .carousel .control-prev.control-arrow {
-      left: 0; }
+      left: -10px; }
       .carousel .control-prev.control-arrow:before {
         border-right: 8px solid #fff; }
     .carousel .control-next.control-arrow {
-      right: 0; }
+      right: -10px; }
       .carousel .control-next.control-arrow:before {
         border-left: 8px solid #fff; }
   
@@ -65,7 +65,7 @@
     .carousel .control-arrow {
       top: 50%;
       margin-top: -13px;
-      font-size: 18px; }
+      font-size: 20px; }
     .carousel .thumbs-wrapper {
       height:0px;
       margin: 20px;
@@ -108,7 +108,7 @@
       overflow: hidden; 
       margin-left: auto;
       margin-right: auto;
-      margin-top: 20px;
+      margin-top: 70px;
     }
       .carousel.carousel-slider .control-arrow {
         top: 0;
@@ -155,7 +155,8 @@
       padding: 0;
       position: relative;
       list-style: none;
-      width: 100%; }
+      width: 100%; 
+    }
       .carousel .slider.animated {
         -webkit-transition: all 0.35s ease-in-out;
         -moz-transition: all 0.35s ease-in-out;
@@ -192,7 +193,8 @@
         background: #000;
         color: #fff;
         padding: 10px;
-        font-size: 12px;
+        font-family: 'Roboto';
+        font-size: 19px;
         text-align: center;
         opacity: 0.25;
         -webkit-transition: opacity 0.35s ease-in-out;

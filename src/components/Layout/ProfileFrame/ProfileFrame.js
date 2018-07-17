@@ -10,8 +10,12 @@ const styles = theme => ({
         margin: 60,
       },
       bigAvatar: {
-        width: 200,
-        height: 200,
+        width: 300,
+        height: 300,
+        position: 'absolute',
+        top: 0,
+        marginLeft: 'auto',
+        marginTop: '100px',
       },
 });
 
