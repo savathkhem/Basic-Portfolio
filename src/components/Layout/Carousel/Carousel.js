@@ -31,7 +31,7 @@ const CarouselContent = (props)=> (
             </div>
             <div>
             <img src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" />
-            <p className="legend">"Have many goals, but always priotize them.  Have goals for your goals.  Sometime the path to your goal has multiple steps.  Route it out and take one step at a time."</p>
+            <p className="legend">"Have many goals, but always priotize them.  Have goals for your goals.  Sometimes the path to your goal has multiple steps.  Route it out and take one step at a time."</p>
             </div>
             <div>
             <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
