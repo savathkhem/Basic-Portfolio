@@ -22,10 +22,9 @@ const styles = theme => ({
     boxShadow: theme.shadows[5],
     padding: 'unset',
   },
-  modal: {
-    top: '40%',
-    // left: '49.3%',
-  }
+  // modal: {
+  //   position: 'relavtive',
+  // }
 });
 
 const ModalNew = (props) =>  (
