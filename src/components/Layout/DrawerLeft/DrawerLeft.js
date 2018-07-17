@@ -52,45 +52,38 @@ class DrawerLeft extends React.Component {
         />
 
         <Card 
-          title='test'
-          src='https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg'
-          url='http://www.google.com'
-          overview='blah blah blah'      
+          title='MongoScraper'
+          src='./images/mongoscraper.jpg'
+          url='https://fierce-falls-90887.herokuapp.com/'
+          overview='MongoScraper is a scraping tool.  Using MongoDB, and cherios to scrape the net.  I used bootstrap css library for the styling'      
         />
 
         <Card 
-          title='test'
-          src='https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg'
-          url='http://www.google.com'
-          overview='blah blah blah'      
+          title='Motivator'
+          src='./images/motivator.jpg'
+          url='https://secure-tor-11865.herokuapp.com/'
+          overview="This application is designed to motivate!  Our fullstack application is using mySQL, sequalize, bootstrap, firebase oauth, graphjs, twilio.  We're able to log goals, send text reminders/alerts, and analyze the data using graphjs."      
         />
 
         <Card 
-          title='test'
-          src='https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg'
-          url='http://www.google.com'
-          overview='blah blah blah'      
+          title='Eat The Burger'
+          src='./images/eattheburger.jpg'
+          url='https://warm-bayou-21284.herokuapp.com/'
+          overview='Using mysql for the backend and materialize css library for the front end.  This application is a fun little excercise where you eat a virtual burger.  You can create, trash, eat, and remake burgers because why the CRUD not?'      
         />
 
         <Card 
-          title='test'
-          src='https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg'
-          url='http://www.google.com'
-          overview='blah blah blah'      
+          title='FriendFinder3000'
+          src='./images/friendfinder.jpg'
+          url='https://guarded-beyond-60241.herokuapp.com/'
+          overview='Using materialize css library for the frontend and express this application is takes your inputs and assigns you to a friend based on your inputs.'      
         />
 
         <Card 
-          title='test'
-          src='https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg'
-          url='http://www.google.com'
-          overview='blah blah blah'      
-        />
-
-        <Card 
-          title='test'
-          src='https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg'
-          url='http://www.google.com'
-          overview='blah blah blah'      
+          title='TrailerPark1.0'
+          src='./images/trailerpark1.0.jpg'
+          url='https://savathkhem.github.io/Trailer-Park/index.html'
+          overview="TrailerPark is a place you can go and quickly search up trailers so you can figure out what you want to watch!.  This web app uses api's from youtube, omdb, google, firebase oauth to pull content from the web.  We used materialize for the front end."      
         />
 
       </List>
