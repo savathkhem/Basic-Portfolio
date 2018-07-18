@@ -72,7 +72,7 @@ class Body extends Component {
     };
 
     openUrlResume = () => {
-        window.open("https://drive.google.com/open?id=15-4RyRG2PYVrfWJpHNG-dnEnjH0EHe9S","_blank")
+        window.open("https://drive.google.com/file/d/1a2ZHgZj-rLi1yPJuWFzti01fuxhM9xqk/view?usp=sharing","_blank")
     }
       
     openUrlLinkedIn = () => {
@@ -108,14 +108,14 @@ class Body extends Component {
                         image="http://informationcommunicationtechnology.com/wp-content/uploads/2018/06/Desk-hd-backgrounds.jpg"
                     >
 
-                    <Button onClick={this.handleProfileClick} style={{position: "unset"}}>
+                    {/* <Button onClick={this.handleProfileClick} style={{position: "unset"}}> */}
                         <ProfileFrame 
                             style={{float: "left"}}
                             alt="Savath Khem"
                             src="./images/profile.jpeg"
                         />
-                    </Button>
-                    <Modal
+                    {/* </Button> */}
+                    {/* <Modal
                         open={this.state.profileOpen}
                         onClose={this.handleProfileClick}
                         >
@@ -126,7 +126,7 @@ class Body extends Component {
                             faceBook={this.openUrlFacebook}
                             gitHub={this.openUrlGithub}
                         />
-                    </Modal>
+                    </Modal> */}
 
                         <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={classes.welcome}>
                             Welcome

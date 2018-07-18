@@ -36,7 +36,7 @@ class NavBar extends React.Component {
   };
 
   openUrlResume = () => {
-    window.open("https://drive.google.com/open?id=15-4RyRG2PYVrfWJpHNG-dnEnjH0EHe9S","_blank")
+    window.open("https://drive.google.com/file/d/1a2ZHgZj-rLi1yPJuWFzti01fuxhM9xqk/view?usp=sharing","_blank")
 }
   
   openUrlLinkedIn = () => {
