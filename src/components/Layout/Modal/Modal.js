@@ -18,7 +18,7 @@ const styles = theme => ({
   paper: {
     position: 'absolute',
     width: 'unset',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'black',
     boxShadow: theme.shadows[5],
     padding: 'unset',
   },

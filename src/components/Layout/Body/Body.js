@@ -33,22 +33,23 @@ const styles = theme => ({
         marginBottom: theme.spacing.unit,
       },
       button: {
-        width: '35rem',
-        height: '10rem',
-        bottom: '50vh',
-        borderRadius: '100px',
-        fontFamily: 'Futura, Helvetica, sans-serif',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        lineHeight: '10rem',
-        textTransform: 'uppercase',
-        fontSize: '3rem',
-        textDecoration: 'none',
-        backgroundImage: 'linear-gradient(to bottom, #ff1177 0%, #f50057 100%)',
-        color: '#ffffff',
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
+        top: 0,
+        // width: '35rem',
+        // height: '10rem',
+        // bottom: '50vh',
+        // borderRadius: '100px',
+        // fontFamily: 'Futura, Helvetica, sans-serif',
+        // fontWeight: 'bold',
+        // textAlign: 'center',
+        // lineHeight: '10rem',
+        // textTransform: 'uppercase',
+        // fontSize: '3rem',
+        // textDecoration: 'none',
+        // backgroundImage: 'linear-gradient(to bottom, #ff1177 0%, #f50057 100%)',
+        // color: '#ffffff',
+        // display: 'block',
+        // marginLeft: 'auto',
+        // marginRight: 'auto',
       },
   });
 
@@ -68,7 +69,7 @@ const HeroBanner = ({ image, min, max, children }) => (
 
 class Body extends Component {
     state = { 
-      profileOpen: false,
+      aboutOpen: false,
     };
 
     openUrlResume = () => {
@@ -91,8 +92,8 @@ class Body extends Component {
         window.open("https://github.com/savathkhem/","_blank")
     }
 
-    handleProfileClick = () => {
-        this.setState(state => ({ profileOpen: !state.profileOpen }));
+    handleAboutClick = () => {
+        this.setState(state => ({ aboutOpen: !state.aboutOpen }));
     };
 
     render() {
@@ -129,7 +130,7 @@ class Body extends Component {
                     </Modal> */}
 
                         <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={classes.welcome}>
-                            Welcome
+                           | Full Stack Web Developer |
                         </Typography>
                     </HeroBanner>
                 </main>
@@ -141,11 +142,22 @@ class Body extends Component {
                         max={'20%'}
                         image="https://www.mockupworld.co/wp-content/uploads/edd/2017/10/free-office-desk-scene-mockup-1000x683.jpg"
                     >
-                <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={classes.sectionTitle}>
+                {/* <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={classes.sectionTitle}>
                     About Me
-                </Typography>
+                </Typography> */}
+                {/* <CarouselContent /> */}
+                <Button variant="contained" size="large" color="secondary" className={classes.button} onClick={this.handleAboutClick}>
+                    About Me
+                </Button>
+                <Modal
+                open={this.state.aboutOpen}
+                onClose={this.handleAboutClick}
+                >
+
                 <CarouselContent />
-                    </HeroBanner>
+
+                </Modal>
+                </HeroBanner>
                 </main>
 
             </ParallaxProvider>

@@ -10,7 +10,11 @@ import Card from './../Card';
 const styles = {
   list: {
     width: 250,
+    // background: 'grey',
   },
+  white: {
+    color: 'white',
+  }
 };
 
 class DrawerLeft extends React.Component {
@@ -92,7 +96,7 @@ class DrawerLeft extends React.Component {
 
     return (
       <div>
-        <IconButton onClick={this.toggleDrawer('left', true)}><MenuIcon /></IconButton>
+        <IconButton className={classes.color} color={'inherit'} onClick={this.toggleDrawer('left', true)}><MenuIcon /></IconButton>
         <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
           <div>
             {sideList}
