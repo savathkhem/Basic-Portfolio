@@ -42,24 +42,3 @@ const CarouselContent = (props)=> (
 );
 
 export default CarouselContent; 
-
-
-
-        //     <Paper className={props.classes.paper}>
-        //         
-        //     </Paper>
-        //     <Paper className={props.classes.paper}>
-        //         
-        //     </Paper>
-        //     <Paper className={props.classes.paper}>
-        //         
-        //     </Paper>
-        //     <Paper className={props.classes.paper}>
-        //         
-        //     </Paper>
-        //     <Paper className={props.classes.paper}>
-        //         
-        //     </Paper>
-        //     <Paper className={props.classes.paper}>
-        //         
-        //     </Paper>

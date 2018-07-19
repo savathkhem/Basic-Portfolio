@@ -5,9 +5,10 @@ import { Typography, Button } from '@material-ui/core/';
 import { withStyles } from '@material-ui/core/styles';
 import CarouselContent from "./../Carousel";
 import ProfileFrame from "./../ProfileFrame";
-import ProfileMenu from "./../ProfileMenu";
 import Modal from "./../Modal";
+import Skills from "./../Skills"
 import "./Body.css";
+
 
 const styles = theme => ({
     welcome: {
@@ -34,22 +35,6 @@ const styles = theme => ({
       },
       button: {
         top: 0,
-        // width: '35rem',
-        // height: '10rem',
-        // bottom: '50vh',
-        // borderRadius: '100px',
-        // fontFamily: 'Futura, Helvetica, sans-serif',
-        // fontWeight: 'bold',
-        // textAlign: 'center',
-        // lineHeight: '10rem',
-        // textTransform: 'uppercase',
-        // fontSize: '3rem',
-        // textDecoration: 'none',
-        // backgroundImage: 'linear-gradient(to bottom, #ff1177 0%, #f50057 100%)',
-        // color: '#ffffff',
-        // display: 'block',
-        // marginLeft: 'auto',
-        // marginRight: 'auto',
       },
   });
 
@@ -72,26 +57,6 @@ class Body extends Component {
       aboutOpen: false,
     };
 
-    openUrlResume = () => {
-        window.open("https://drive.google.com/file/d/1a2ZHgZj-rLi1yPJuWFzti01fuxhM9xqk/view?usp=sharing","_blank")
-    }
-      
-    openUrlLinkedIn = () => {
-        window.open("https://www.linkedin.com/in/savathkhem/","_blank")
-    }
-      
-    openUrlFacebook = () => {
-        window.open("https://www.facebook.com/savath.khem","_blank")
-    }
-      
-    openUrlTwitter = () => {
-        window.open("https://twitter.com/nerdyKambo/","_blank")
-    }
-
-    openUrlGithub = () => {
-        window.open("https://github.com/savathkhem/","_blank")
-    }
-
     handleAboutClick = () => {
         this.setState(state => ({ aboutOpen: !state.aboutOpen }));
     };
@@ -108,27 +73,11 @@ class Body extends Component {
                         max={'20%'}
                         image="http://informationcommunicationtechnology.com/wp-content/uploads/2018/06/Desk-hd-backgrounds.jpg"
                     >
-
-                    {/* <Button onClick={this.handleProfileClick} style={{position: "unset"}}> */}
                         <ProfileFrame 
                             style={{float: "left"}}
                             alt="Savath Khem"
                             src="./images/profile.jpeg"
                         />
-                    {/* </Button> */}
-                    {/* <Modal
-                        open={this.state.profileOpen}
-                        onClose={this.handleProfileClick}
-                        >
-                        <ProfileMenu 
-                            resume={this.openUrlResume}
-                            linkedIn={this.openUrlLinkedIn}
-                            twitter={this.openUrlTwitter}
-                            faceBook={this.openUrlFacebook}
-                            gitHub={this.openUrlGithub}
-                        />
-                    </Modal> */}
-
                         <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={classes.welcome}>
                            | Full Stack Web Developer |
                         </Typography>
@@ -142,10 +91,6 @@ class Body extends Component {
                         max={'20%'}
                         image="https://www.mockupworld.co/wp-content/uploads/edd/2017/10/free-office-desk-scene-mockup-1000x683.jpg"
                     >
-                {/* <Typography align={"center"} headlineMapping={"title"} variant={"display2"} className={classes.sectionTitle}>
-                    About Me
-                </Typography> */}
-                {/* <CarouselContent /> */}
                 <Button variant="contained" size="large" color="secondary" className={classes.button} onClick={this.handleAboutClick}>
                     About Me
                 </Button>
@@ -153,19 +98,28 @@ class Body extends Component {
                 open={this.state.aboutOpen}
                 onClose={this.handleAboutClick}
                 >
-
                 <CarouselContent />
-
                 </Modal>
                 </HeroBanner>
+                </main>
+
+                <main>
+                    <nav />
+                    <HeroBanner
+                        min={'-20%'}
+                        max={'20%'}
+                        image="./images/wildtextures_vintage-pine-table-top.jpg"
+                    >
+
+                    <Skills />
+      
+                    </HeroBanner>
                 </main>
 
             </ParallaxProvider>
         )
     }
 }
-
-
 
 Body.propTypes = {
     classes: PropTypes.object.isRequired,
